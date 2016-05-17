@@ -1,0 +1,113 @@
+//browser-sync start --server --files "css/*.css" "./*.html"
+
+body
+  background: rgba(0, 118, 255, 0.9)
+  background: linear-gradient(to right, rgba(69, 199, 252, 0.9) 0%, rgba(0, 118, 255, 0.9) 100%)
+
+h1, h2, h3, h4, h5, p, a
+  //font-family: 'Lato','Helvetica Neue', Helvetica, Roboto, Arial, sans-serif
+  color: rgba(255, 255, 255, 0.8)
+h1, h2, h3, h4, h5
+  font-family: 'Titillium Web', sans-serif
+  font-weight: 700
+p, a
+  font-family: Roboto, sans-serif
+  font-weight: 400
+
+a
+  color: rgba(255, 255, 255, 0.7)
+  text-decoration: underline
+  &:hover
+    color: rgba(255, 255, 255, 1)
+  &:active
+    color: rgba(255, 255, 255, 1)
+
+.details
+  font-size: 0.85em
+
+
+header
+  .content
+    padding-top: 8rem
+  nav.row
+    padding-top: 6.875rem
+
+.cover
+  background-size: cover
+  &.intro
+    background-color: rgba(69, 199, 252, 0.9)
+    background: transparent url(../img/covers/mountian.jpg) no-repeat center top
+    background-size: cover
+    height: 100%
+  &.disciples
+    background-color: rgba(130, 192, 42, 0.9)
+    background: transparent url(../img/covers/wheat-2.jpg) no-repeat center top
+    background-size: cover
+  &.red
+    background-color: rgba(255, 127, 80, 0.9)
+    background: transparent url(../img/covers/wheat-2.jpg) no-repeat center top
+    background-size: cover
+  &.block
+    height: 15em
+  .color-overlay
+    height: inherit
+    &.blue
+      background: rgba(69, 199, 252, 0.9)
+      background: linear-gradient(to right, rgba(69, 199, 252, 0.9) 0%, rgba(0, 118, 255, 0.9) 100%)
+    &.green
+      background: rgba(176, 239, 42, 0.7)
+      background: linear-gradient(to right, rgba(176, 239, 42, 0.7) 0%, rgba(100, 200, 50, 0.9) 100%)
+    &.red
+      background: rgba(246, 71, 71, 0.9)
+      background: linear-gradient(to right, rgba(255, 127, 80, 0.7) 0%, rgba(246, 71, 71, 0.9) 100%)
+    &.orange
+      background: rgba(246, 71, 71, 0.9)
+      background: linear-gradient(to right, rgba(255, 127, 80, 0.7) 0%, rgba(246, 71, 71, 0.9) 100%)
+    &.light
+      background-color: rgba(69, 199, 252, 0.3)
+      background: linear-gradient(to right, rgba(69, 199, 252, 0.3) 0%, rgba(0, 118, 255, 0.5) 100%)
+      h1, h2, h3, h4, h5, p, a
+        color: rgba(69, 199, 252, 0.9)
+    &.dark
+      background-color: rgba(0, 0, 0, 0.3)
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%)
+      h1, h2, h3, h4, h5, p, a
+        color: rgba(255, 255, 255, 0.8)
+
+
+// bright salmon colors
+// #ff7f50 //light orange
+// #ff7f50 //light orange
+// #f2784b //light orange
+// #f64747 //red -- background
+// #ff6347
+// #ef4836
+// #ef4836
+
+img
+  display: block
+  z-index: -1
+
+
+
+// @media only screen and (min-height: 700px)
+//   .cover
+//     height: 100%
+//
+// @media only screen and (max-width: 40em)
+//   .cover
+//     height: auto
+//     background: url(../img/covers/main-cover-small.jpg) no-repeat center top
+//
+// @media only screen and (min-width: 40.063em) and (max-width: 64em)
+//   .cover
+//     background: url(../img/covers/main-cover-medium.jpg) no-repeat center top
+//
+// @media only screen and (orientation: portrait)
+//   .cover
+//     background: url(../img/covers/main-cover-medium-portrait.jpg) no-repeat center top
+//
+// @media only screen and (min-width: 40.063em)
+//   .cover .button-group
+//     padding-top: 3.75rem
+//     padding-bottom: 1.25rem
