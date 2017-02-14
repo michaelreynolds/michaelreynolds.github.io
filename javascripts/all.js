@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".responsivemenu").on("click",function(){$(this).toggleClass("checked"),$(".responsive").slideToggle("fast")})});
