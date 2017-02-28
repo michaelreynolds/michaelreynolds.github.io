@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".responsivemenu").on("click",function(){$(this).toggleClass("checked"),$(".responsive").slideToggle("fast")})});
+$(document).ready(function(){$(".responsivemenu").on("click",function(){$(this).toggleClass("checked"),$(".responsive").slideToggle("fast")}),$('a[href^="#"]').click(function(){var e=$(this).attr("href");return $("html, body").animate({scrollTop:$(e).offset().top},"slow"),!1})});
