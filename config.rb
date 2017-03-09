@@ -44,7 +44,7 @@ configure :build do
   activate :minify_javascript
 
   # Easy URLs
-  activate :directory_indexes
+  # activate :directory_indexes
 end
 
 
