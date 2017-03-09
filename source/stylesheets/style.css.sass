@@ -1,0 +1,388 @@
+//browser-sync start --server --files "css/*.css" "./*.html"
+@charset "utf-8"
+@import "compass/css3"
+// @import "normalize"
+//
+// @media #$small-up
+// @media #$small-only
+//
+// @media #$medium-up
+// @media #$medium-only
+//
+// @media #$large-up
+// @media #$large-only
+//
+// @media #$xlarge-up
+// @media #$xlarge-only
+//
+// @media #$xxlarge-up
+// @media #$xxlarge-only
+//
+// bright salmon colors
+// #ff7f50 //light orange
+// #ff7f50 //light orange
+// #f2784b //light orange
+// #f64747 //red -- background
+// #ff6347
+// #ef4836
+// #ef4836
+
+//'Open Sans', 'Roboto Condensed', 'Source Sans Pro', 'Montserrat', 'Open Sans',
+
+
+$fadedwhite: rgba(255, 255, 255, 0.8)
+$darkblue: rgba(0, 118, 255, 0.8)
+$green: rgba(100, 200, 50, 0.9)
+$purple: rgba(50, 55, 116, 0.95)
+$red: rgba(246, 71, 71, 0.9)
+$muted: rgba(57,66,91,1)
+$dark: #1A1C2B
+$gray: #313C54
+
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+/////////////// BODY ////////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+body
+  background: rgba(0, 118, 255, 0.9)
+  background: linear-gradient(to right, rgba(69, 199, 252, 0.9) 0%, rgba(0, 118, 255, 0.9) 100%)
+
+//default font styles
+h1, h2, h3, h4, h5, p, a, ul, li
+  font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, sans-serif
+  color: $fadedwhite
+h1, h2
+  font-weight: 700
+  padding: 0
+  margin: 0
+  line-height: 1.2em
+h3, h4, h5, p, li
+  font-weight: 600
+a
+  font-weight: 700
+  &:hover
+    color: #fff
+    text-decoration: underline
+  &:active
+    color: #fff
+  &:visited
+    color: #fff
+  &:focus
+    outline: none
+::selection
+  background-color: #3281ff
+  color: #fff
+img
+  display: block
+  z-index: -1
+  pointer-events: none
+.subhead
+  padding-top: 0.5rem
+a.button
+  text-decoration: none
+  font-weight: 600
+  border-radius: 5px
+  margin: 0.5rem 0
+  &.inverse
+    background-color: transparent
+    border: $fadedwhite 1px solid
+    color: $fadedwhite
+    &.light
+      border: $gray 1px solid
+      color: $gray
+      &:hover, &:focus
+        color: $fadedwhite
+        background: $gray
+    &:hover, &:focus
+      background: $fadedwhite
+      &.blue
+        color: $darkblue
+      &.dark
+        color: $dark
+      &.gray
+        color: $gray
+      &.red
+        color: $red
+      &.green
+        color: $green
+      &.purple
+        color: $purple
+      &.muted
+        color: $muted
+  &.solid
+    background-color: $dark
+    color: $fadedwhite
+    &:hover, &:focus
+      background-color: $fadedwhite
+      color: $dark
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+//////////// HEADER + NAV ///////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+header
+  .content
+    padding-top: 12rem
+  @media only screen and (max-width: 1024px)
+    .content
+      padding-top: 2rem
+  nav
+    padding-top: 1.5rem
+    @media only screen and (max-width: 1024px)
+      &
+        padding-top: 0
+    .responsive
+      @media only screen and (max-width: 1024px)
+        display: none
+    ul.nav
+      list-style: none
+      @media only screen and (max-width: 1024px)
+        &
+          margin-left: 4rem
+          padding-top: 0.5rem
+          margin-top: 0
+      & li
+        padding-right: 2.5rem
+        display: block
+        float: right
+      @media only screen and (max-width: 1024px)
+        & li
+          float: none
+          clear: both
+          display: block
+      & a
+        font-weight: 600
+        &.logotype
+          font-weight: 700
+          font-size: 1.2rem
+          text-decoration: none
+          @media only screen and (max-width: 1024px)
+            &
+              //background-color: #fff
+              // color: $darkblue
+      & a:hover
+        text-decoration: none
+  nav
+    .hamburger
+      list-style: none
+      float: left
+      margin: 0
+      padding: 10px 0
+      position: relative
+      top: 2px
+      left: 10px
+      @include transition(all 233ms cubic-bezier(0.5, 0, 0, 1))
+      li
+        width: 1.5rem
+        height: 0.1875rem
+        background: $fadedwhite
+        margin: 3px 0 0
+        padding: 0
+        @include transform(translate3d(0, 0, 0))
+        @include transition(all 333ms cubic-bezier(0.5, 0, 0, 1))
+    .checked
+      .hamburger
+        li.first
+          @include transform( rotate( -135deg ) translateY( -8.5px ))
+        li.second
+          @include opacity(0)
+        li.third
+          @include transform( rotate( 135deg ) translateY( 8.5px ))
+
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+////////////// ARROW  ///////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+@include keyframes(bounce)
+  0%, 20%, 50%, 80%, 100%
+    @include transform(translateY(0))
+  40%
+    @include transform(translateY(-10px))
+  60%
+    @include transform(translateY(-5px))
+.arrow, .locator
+  position: absolute
+  bottom: 0
+  left: 50%
+  opacity: 0.4
+  text-align: center
+  margin-left: -6rem
+  width: 12rem
+.locator
+  font-weight: 600
+  color: #fff
+  margin-bottom: 1rem
+.arrow
+  width: 40px
+  height: 40px
+  bottom: 50px
+  margin-left: -20px
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=)
+  background-size: contain
+.bounce
+  @include animation(bounce 2s infinite)
+
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+/////////////// COVER ///////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+.cover
+  background-size: cover
+  &.intro
+    background-color: rgba(69, 199, 252, 0.9)
+    background: transparent url(../images/covers/mountian.jpg) no-repeat center top
+    background-size: cover
+    height: 100%
+  &.disciples
+    background-color: rgba(130, 192, 42, 0.9)
+    background: transparent url(../images/covers/wheat-2.jpg) no-repeat center top
+    background-size: cover
+  &.muted
+    background-color: rgba(53, 58, 81, 0.9)
+    background: transparent url(../images/covers/negativespace-1.jpg) no-repeat center top
+    background-size: cover
+  &.red
+    background-color: rgba(255, 127, 80, 0.9)
+    background: transparent url(../images/covers/negativespace-1.jpg) no-repeat center top
+    background-size: cover
+  &.light
+    background-color: #f8f8f8
+    background: transparent url(../images/covers/negativespace-3.jpg) no-repeat center top
+    background-size: cover
+  &.blue
+    background-color: $darkblue
+    background: transparent url(../images/covers/negativespace-2.jpg) no-repeat center top
+    background-size: cover
+
+
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+///////////// SECTION ///////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+section
+  .content
+    width: 100%
+    padding: 5rem 0
+
+.color-overlay
+  &.blue
+    background: rgba(69, 199, 252, 0.9)
+    background: linear-gradient(to right, rgba(69, 199, 252, 0.8) 0%, rgba(0, 118, 255, 0.9) 100%)
+    &.intro
+      height: inherit
+  &.green
+    background: rgba(100, 200, 50, 0.95)
+    background: linear-gradient(to right, rgba(142, 212, 50, 0.9) 0%, rgba(100, 200, 50, 0.95) 100%)
+  &.purple
+    background: rgba(50, 55, 116, 0.95)
+    background: linear-gradient(to right, rgba(57, 66, 125, 0.85) 0%, rgba(50, 55, 116, 0.95) 100%)
+  &.muted
+    background: rgba(53, 58, 81, 0.9)
+    background: linear-gradient(to right, rgba(57, 66, 91, 0.8) 0%, rgba(53, 58, 81, 0.9) 100%)
+  &.red
+    background: rgba(246, 71, 71, 0.9)
+    background: linear-gradient(to right, rgba(255, 127, 80, 0.85) 0%, rgba(246, 71, 71, 0.95) 100%)
+  &.orange
+    background: rgba(246, 71, 71, 0.9)
+    background: linear-gradient(to right, rgba(255, 127, 80, 0.7) 0%, rgba(246, 71, 71, 0.9) 100%)
+  &.dark
+    background-color: $dark
+    h1, h2, h3, h4, h5, p, a
+      color: $fadedwhite
+  &.light
+    //background-color: rgba(69, 199, 252, 0.3)
+    background-color: rgba(248, 248, 248, 0.5)
+    h1, h2, h3, h4, h5, p, a
+      color: $gray
+  &.gray
+    background-color: $gray
+
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+///////////// FOOTER ////////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+footer
+  .about
+    padding-top: 5rem
+    margin: auto
+    width: 80%
+    p
+      font-weight: 400
+      font-size: 0.9rem
+      line-height: 1.4rem
+    .info
+      padding-top: 4rem
+      padding-bottom: .5rem
+      font-size: 0.75rem
+      font-weight: 400
+    .portrait
+      display: inline-block
+      position: relative
+      width: 10rem
+      height: 10rem
+      overflow: hidden
+      border-radius: 50%
+      margin-bottom: 1rem
+      & img
+        width: 100%
+        height: 100%
+    .icons
+      padding: 1rem 0
+      .sub
+        text-transform: uppercase
+        color: #42465A
+      & > a
+        margin-left: 0.7rem
+        &:hover
+          text-decoration: none
+    .icon
+      fill: #828493
+      //#3F4258
+      width: 1.125rem
+
+
+// @media only screen and (min-height: 700px)
+//   .cover
+//     height: 100%
+//
+// @media only screen and (max-width: 40em)
+//   .cover
+//     height: auto
+//     background: url(../images/covers/main-cover-small.jpg) no-repeat center top
+//
+// @media only screen and (min-width: 40.063em) and (max-width: 64em)
+//   .cover
+//     background: url(../images/covers/main-cover-medium.jpg) no-repeat center top
+//
+// @media only screen and (orientation: portrait)
+//   .cover
+//     background: url(../images/covers/main-cover-medium-portrait.jpg) no-repeat center top
+//
+// @media only screen and (min-width: 40.063em)
+//   .cover .button-group
+//     padding-top: 3.75rem
+//     padding-bottom: 1.25rem
+//     width: 50vw
