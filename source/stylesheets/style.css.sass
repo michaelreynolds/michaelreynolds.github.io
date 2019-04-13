@@ -27,6 +27,9 @@
 // #ff6347
 // #ef4836
 // #ef4836
+// rgba(219,10,64,.996) // red selection
+// #db0a40 // red selection
+// #e2e3e5 // grey
 
 // Socialive
 // background: #06beb6
@@ -47,6 +50,13 @@
 // CrimsonTide
 // background: #642B73
 // background: linear-gradient(to left, #C6426E, #642B73)
+
+
+// background-color: #47c9c9
+// background: linear-gradient(to right,#47c9c9 1%,#00c653 100%)!important
+
+// background: linear-gradient(315deg,#306E6B 0%,#334272 28.61%,#231338 100%)
+
 
 // RedSunset
 // background: #355C7D
@@ -146,245 +156,247 @@ $gray: #313C54
 /////////////////////////////////////////
 /////////////////////////////////////////
 body
-  background: rgba(0, 118, 255, 0.9)
-  background: linear-gradient(to right, rgba(69, 199, 252, 0.9) 0%, rgba(0, 118, 255, 0.9) 100%)
+	background: rgba(0, 118, 255, 0.9)
+	background: linear-gradient(to right, rgba(69, 199, 252, 0.9) 0%, rgba(0, 118, 255, 0.9) 100%)
 
 //default font styles
 h1, h2, h3, h4, h5, p, a, ul, li
-  font-family: 'Titillium Web', 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif
-  color: $fadedwhite
+	font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, sans-serif
+	// font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif
+	// font-family: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif
+	color: $fadedwhite
 h1, h2
-  font-weight: 700
-  padding: 0
-  margin: 0
-  line-height: 1.2em
+	font-weight: 700
+	padding: 0
+	margin: 0
+	line-height: 1.2em
 h3, h4, h5, p, li
-  font-weight: 600
+	font-weight: 600
 a
-  font-weight: 700
-  &:hover
-    color: #fff
-    text-decoration: underline
-  &:active
-    color: #fff
-  &:visited
-    color: #fff
-  &:focus
-    outline: none
+	font-weight: 700
+	&:hover
+		color: #fff
+		text-decoration: underline
+	&:active
+		color: #fff
+	&:visited
+		color: #fff
+	&:focus
+		outline: none
 ::selection
-  background-color: #3281ff
-  color: #fff
+	background-color: #3281ff
+	color: #fff
 img
-  display: block
-  z-index: -1
-  pointer-events: none
+	display: block
+	z-index: -1
+	pointer-events: none
 .subhead
-  padding-top: .5rem
+	padding-top: .5rem
 .cta
-  padding-top: 1.5rem
-  margin-bottom: .5rem
-a.button
-  text-decoration: none
-  font-weight: 600
-  border-radius: 5px
-  margin: 0.5rem 0
-  // transition: background 0.5s ease
-  &.inverse
-    background-color: transparent
-    border: $fadedwhite 1px solid
-    color: $fadedwhite
-    &.light
-      border: $gray 1px solid
-      color: $gray
-      &:hover, &:focus
-        color: $fadedwhite
-        background: $gray
-    &:hover, &:focus
-      background: $fadedwhite
-      &.blue
-        color: $darkblue
-      &.dark
-        color: $dark
-      &.gray
-        color: $gray
-      &.red
-        color: $red
-      &.green
-        color: $green
-      &.purple
-        color: $purple
-      &.muted
-        color: $muted
-  &.solid
-    background-color: $dark
-    color: $fadedwhite
-    &:hover, &:focus
-      background-color: $fadedwhite
-      color: $dark
+	padding-top: 1.5rem
+	margin-bottom: .5rem
+.button
+	text-decoration: none
+	font-weight: 600
+	border-radius: 5px
+	margin: 0.5rem 0
+	// transition: background 0.5s ease
+	&.inverse
+		background-color: transparent
+		border: $fadedwhite 1px solid
+		color: $fadedwhite
+		&.light
+			border: $gray 1px solid
+			color: $gray
+			&:hover, &:focus
+				color: $fadedwhite
+				background: $gray
+		&:hover, &:focus
+			background: $fadedwhite
+			&.blue
+				color: $darkblue
+			&.dark
+				color: $dark
+			&.gray
+				color: $gray
+			&.red
+				color: $red
+			&.green
+				color: $green
+			&.purple
+				color: $purple
+			&.muted
+				color: $muted
+	&.solid
+		background-color: $dark
+		color: $fadedwhite
+		&:hover, &:focus
+			background-color: $fadedwhite
+			color: $dark
 
 /////////////////////////////////////////
 //https://workplace.fb.com/
 /////////////////////////////////////////
 .form-signup
-  display: block
-  text-align: center
-  margin-top: 30px
-  margin-bottom: 20px
-  height: 50px
-  input[type="text"], input[type="email"]
-    border-radius: 3px
-    border: none
-    padding: 13px 20px
-    min-width: 36%
-    vertical-align: middle
-    outline: none
-    line-height: 1.5em
-    float: left
-  .btn-submit
-    background: #0d54af
-    border: none
-    padding: 11px 20px 15px
-    line-height: 1.5em
-    transition: background 0.8s ease
-  .btn
-    border: 1px solid #C6C8CC
-    border-radius: 3px
-    color: #363a46
-    padding: 1.5rem 3rem
-    border-radius: 3px
-    background: none
-    display: inline-block
-    text-align: center
-    color: #fff
-    border: 1px solid #fff
-    padding: 1rem 2.5rem
-    font-size: 1.4rem
-    letter-spacing: 0.3px
-    transition: opacity 0.5s ease
-    // &.yellow
-    // 	color: #ed7821
-    // 	background-color: #fbd334
-    // 	box-shadow: 0 3px 0 0 #f7af0b
-    //   &:hover
-    // 	color: #ed7821
-    // 	background-color: #fcdb4f
-    // 	cursor: pointer
-    // &.red
-    //   color: #fff
-    // 	background-color: #fa4542
-    // 	box-shadow: 0 3px 0 0 #a20101
-    //   &:hover
-    //   background-color: #f6201d
+	display: block
+	text-align: center
+	margin-top: 30px
+	margin-bottom: 20px
+	height: 50px
+	input[type="text"], input[type="email"]
+		border-radius: 3px
+		border: none
+		padding: 13px 20px
+		min-width: 36%
+		vertical-align: middle
+		outline: none
+		line-height: 1.5em
+		float: left
+	.btn-submit
+		background: #0d54af
+		border: none
+		padding: 11px 20px 15px
+		line-height: 1.5em
+		transition: background 0.8s ease
+	.btn
+		border: 1px solid #C6C8CC
+		border-radius: 3px
+		color: #363a46
+		padding: 1.5rem 3rem
+		border-radius: 3px
+		background: none
+		display: inline-block
+		text-align: center
+		color: #fff
+		border: 1px solid #fff
+		padding: 1rem 2.5rem
+		font-size: 1.4rem
+		letter-spacing: 0.3px
+		transition: opacity 0.5s ease
+		// &.yellow
+		// 	color: #ed7821
+		// 	background-color: #fbd334
+		// 	box-shadow: 0 3px 0 0 #f7af0b
+		//	 &:hover
+		// 	color: #ed7821
+		// 	background-color: #fcdb4f
+		// 	cursor: pointer
+		// &.red
+		//	 color: #fff
+		// 	background-color: #fa4542
+		// 	box-shadow: 0 3px 0 0 #a20101
+		//	 &:hover
+		//	 background-color: #f6201d
 /////////////////////////////////////////
 /////////////////////////////////////////
 //////////// HEADER + NAV ///////////////
 /////////////////////////////////////////
 /////////////////////////////////////////
 header
-  .content
-    padding-top: 12rem
-  @media only screen and (max-width: 1024px)
-    .content
-      padding-top: 2rem
-  nav
-    padding-top: 1.5rem
-    @media only screen and (max-width: 1024px)
-      &
-        padding-top: 0
-    .responsive
-      @media only screen and (max-width: 1024px)
-        display: none
-    ul.nav
-      list-style: none
-      @media only screen and (max-width: 1024px)
-        &
-          margin-left: 4rem
-          padding-top: 0.5rem
-          margin-top: 0
-      & li
-        padding-right: 2.5rem
-        display: block
-        float: right
-      @media only screen and (max-width: 1024px)
-        & li
-          float: none
-          clear: both
-          display: block
-      & a
-        font-weight: 600
-        &.logotype
-          font-weight: 700
-          font-size: 1.2rem
-          text-decoration: none
-          @media only screen and (max-width: 1024px)
-            &
-              //background-color: #fff
-              // color: $darkblue
-      & a:hover
-        text-decoration: none
-  nav
-    .hamburger
-      list-style: none
-      float: left
-      margin: 0
-      padding: 10px 0
-      position: relative
-      top: 2px
-      left: 10px
-      @include transition(all 233ms cubic-bezier(0.5, 0, 0, 1))
-      li
-        width: 1.5rem
-        height: 0.1875rem
-        background: $fadedwhite
-        margin: 3px 0 0
-        padding: 0
-        @include transform(translate3d(0, 0, 0))
-        @include transition(all 333ms cubic-bezier(0.5, 0, 0, 1))
-    .checked
-      .hamburger
-        li.first
-          @include transform( rotate( -135deg ) translateY( -8.5px ))
-        li.second
-          @include opacity(0)
-        li.third
-          @include transform( rotate( 135deg ) translateY( 8.5px ))
+	.content
+		padding-top: 12rem
+	@media only screen and (max-width: 1024px)
+		.content
+			padding-top: 2rem
+	nav
+		padding-top: 1.5rem
+		@media only screen and (max-width: 1024px)
+			&
+				padding-top: 0
+		.responsive
+			@media only screen and (max-width: 1024px)
+				display: none
+		ul.nav
+			list-style: none
+			@media only screen and (max-width: 1024px)
+				&
+					margin-left: 4rem
+					padding-top: 0.5rem
+					margin-top: 0
+			& li
+				padding-right: 2.5rem
+				display: block
+				float: right
+			@media only screen and (max-width: 1024px)
+				& li
+					float: none
+					clear: both
+					display: block
+			& a
+				font-weight: 600
+				&.logotype
+					font-weight: 700
+					font-size: 1.2rem
+					text-decoration: none
+					@media only screen and (max-width: 1024px)
+						&
+							//background-color: #fff
+							// color: $darkblue
+			& a:hover
+				text-decoration: none
+	nav
+		.hamburger
+			list-style: none
+			float: left
+			margin: 0
+			padding: 10px 0
+			position: relative
+			top: 2px
+			left: 10px
+			@include transition(all 233ms cubic-bezier(0.5, 0, 0, 1))
+			li
+				width: 1.5rem
+				height: 0.1875rem
+				background: $fadedwhite
+				margin: 3px 0 0
+				padding: 0
+				@include transform(translate3d(0, 0, 0))
+				@include transition(all 333ms cubic-bezier(0.5, 0, 0, 1))
+		.checked
+			.hamburger
+				li.first
+					@include transform( rotate( -135deg ) translateY( -8.5px ))
+				li.second
+					@include opacity(0)
+				li.third
+					@include transform( rotate( 135deg ) translateY( 8.5px ))
 
 
 
 
 /////////////////////////////////////////
 /////////////////////////////////////////
-////////////// ARROW  ///////////////////
+////////////// ARROW	///////////////////
 /////////////////////////////////////////
 /////////////////////////////////////////
 @include keyframes(bounce)
-  0%, 20%, 50%, 80%, 100%
-    @include transform(translateY(0))
-  40%
-    @include transform(translateY(-10px))
-  60%
-    @include transform(translateY(-5px))
+	0%, 20%, 50%, 80%, 100%
+		@include transform(translateY(0))
+	40%
+		@include transform(translateY(-10px))
+	60%
+		@include transform(translateY(-5px))
 .arrow, .locator
-  position: absolute
-  bottom: 0
-  left: 50%
-  opacity: 0.4
-  text-align: center
-  margin-left: -6rem
-  width: 12rem
+	position: absolute
+	bottom: 0
+	left: 50%
+	opacity: 0.4
+	text-align: center
+	margin-left: -6rem
+	width: 12rem
 .locator
-  font-weight: 600
-  color: #fff
-  margin-bottom: 1rem
+	font-weight: 600
+	color: #fff
+	margin-bottom: 1rem
 .arrow
-  width: 30px
-  height: 30px
-  bottom: 40px
-  margin-left: -15px
-  background-image: url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDUxLjg0NyA0NTEuODQ3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTEuODQ3IDQ1MS44NDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjI1LjkyMywzNTQuNzA2Yy04LjA5OCwwLTE2LjE5NS0zLjA5Mi0yMi4zNjktOS4yNjNMOS4yNywxNTEuMTU3Yy0xMi4zNTktMTIuMzU5LTEyLjM1OS0zMi4zOTcsMC00NC43NTEgICBjMTIuMzU0LTEyLjM1NCwzMi4zODgtMTIuMzU0LDQ0Ljc0OCwwbDE3MS45MDUsMTcxLjkxNWwxNzEuOTA2LTE3MS45MDljMTIuMzU5LTEyLjM1NCwzMi4zOTEtMTIuMzU0LDQ0Ljc0NCwwICAgYzEyLjM2NSwxMi4zNTQsMTIuMzY1LDMyLjM5MiwwLDQ0Ljc1MUwyNDguMjkyLDM0NS40NDlDMjQyLjExNSwzNTEuNjIxLDIzNC4wMTgsMzU0LjcwNiwyMjUuOTIzLDM1NC43MDZ6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==')
-  background-size: contain
+	width: 30px
+	height: 30px
+	bottom: 40px
+	margin-left: -15px
+	background-image: url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDUxLjg0NyA0NTEuODQ3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTEuODQ3IDQ1MS44NDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjI1LjkyMywzNTQuNzA2Yy04LjA5OCwwLTE2LjE5NS0zLjA5Mi0yMi4zNjktOS4yNjNMOS4yNywxNTEuMTU3Yy0xMi4zNTktMTIuMzU5LTEyLjM1OS0zMi4zOTcsMC00NC43NTEgICBjMTIuMzU0LTEyLjM1NCwzMi4zODgtMTIuMzU0LDQ0Ljc0OCwwbDE3MS45MDUsMTcxLjkxNWwxNzEuOTA2LTE3MS45MDljMTIuMzU5LTEyLjM1NCwzMi4zOTEtMTIuMzU0LDQ0Ljc0NCwwICAgYzEyLjM2NSwxMi4zNTQsMTIuMzY1LDMyLjM5MiwwLDQ0Ljc1MUwyNDguMjkyLDM0NS40NDlDMjQyLjExNSwzNTEuNjIxLDIzNC4wMTgsMzU0LjcwNiwyMjUuOTIzLDM1NC43MDZ6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==')
+	background-size: contain
 .bounce
-  @include animation(bounce 2s infinite)
+	@include animation(bounce 2s infinite)
 
 
 
@@ -395,36 +407,36 @@ header
 /////////////////////////////////////////
 /////////////////////////////////////////
 .cover
-  background-size: cover
-  &.intro
-    background-color: rgba(69, 199, 252, 0.9)
-    background: transparent url(../images/covers/mountian.jpg) no-repeat center top
-    background-size: cover
-    height: 100%
-  &.disciples
-    background-color: rgba(53, 58, 81, 0.9)
-    background: transparent url(../images/covers/wheat-2.jpg) no-repeat center top
-    background-size: cover
-  &.muted
-    background-color: rgba(53, 58, 81, 0.9)
-    background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
-    background-size: cover
-  &.red
-    background-color: rgba(255, 127, 80, 0.9)
-    background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
-    background-size: cover
-  &.light
-    background-color: #f8f8f8
-    background: transparent url(../images/covers/negativespace-3-1.jpg) no-repeat center top
-    background-size: cover
-  &.blue
-    background-color: $darkblue
-    background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
-    background-size: cover
-  &.grey
-    background-color: rgba(53, 58, 81, 0.9)
-    background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
-    background-size: cover
+	background-size: cover
+	&.intro
+		background-color: rgba(69, 199, 252, 0.9)
+		background: transparent url(../images/covers/mountian.jpg) no-repeat center top
+		background-size: cover
+		height: 100%
+	&.disciples
+		background-color: rgba(53, 58, 81, 0.9)
+		background: transparent url(../images/covers/wheat-2.jpg) no-repeat center top
+		background-size: cover
+	&.muted
+		background-color: rgba(53, 58, 81, 0.9)
+		background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
+		background-size: cover
+	&.red
+		background-color: rgba(255, 127, 80, 0.9)
+		background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
+		background-size: cover
+	&.light
+		background-color: #f8f8f8
+		background: transparent url(../images/covers/negativespace-3-1.jpg) no-repeat center top
+		background-size: cover
+	&.blue
+		background-color: $darkblue
+		background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
+		background-size: cover
+	&.grey
+		background-color: rgba(53, 58, 81, 0.9)
+		background: transparent url(../images/covers/negativespace-2-1.jpg) no-repeat center top
+		background-size: cover
 
 
 
@@ -436,42 +448,42 @@ header
 /////////////////////////////////////////
 /////////////////////////////////////////
 section
-  .content
-    width: 100%
-    padding: 5rem 0
+	.content
+		width: 100%
+		padding: 5rem 0
 
 .color-overlay
-  &.blue
-    background: rgba(69, 199, 252, 0.9)
-    background: linear-gradient(to right, rgba(69, 199, 252, 0.8) 0%, rgba(0, 118, 255, 0.9) 100%)
-    &.intro
-      height: inherit
-  &.green
-    background: rgba(100, 200, 50, 0.95)
-    background: linear-gradient(to right, rgba(142, 212, 50, 0.9) 0%, rgba(100, 200, 50, 0.95) 100%)
-  &.purple
-    background: rgba(50, 55, 116, 0.95)
-    background: linear-gradient(to right, rgba(57, 66, 125, 0.85) 0%, rgba(50, 55, 116, 0.95) 100%)
-  &.muted
-    background: rgba(53, 58, 81, 0.9)
-    background: linear-gradient(to right, rgba(57, 66, 91, 0.8) 0%, rgba(53, 58, 81, 0.9) 100%)
-  &.red
-    background: rgba(246, 71, 71, 0.9)
-    background: linear-gradient(to right, rgba(255, 127, 80, 0.85) 0%, rgba(246, 71, 71, 0.95) 100%)
-  &.orange
-    background: rgba(246, 71, 71, 0.9)
-    background: linear-gradient(to right, rgba(255, 127, 80, 0.7) 0%, rgba(246, 71, 71, 0.9) 100%)
-  &.dark
-    background-color: $dark
-    h1, h2, h3, h4, h5, p, a
-      color: $fadedwhite
-  &.light
-    //background-color: rgba(69, 199, 252, 0.3)
-    background-color: rgba(248, 248, 248, 0.5)
-    h1, h2, h3, h4, h5, p, a
-      color: $gray
-  &.gray
-    background-color: $gray
+	&.blue
+		background: rgba(69, 199, 252, 0.9)
+		background: linear-gradient(to right, rgba(69, 199, 252, 0.8) 0%, rgba(0, 118, 255, 0.9) 100%)
+		&.intro
+			height: inherit
+	&.green
+		background: rgba(100, 200, 50, 0.95)
+		background: linear-gradient(to right, rgba(142, 212, 50, 0.9) 0%, rgba(100, 200, 50, 0.95) 100%)
+	&.purple
+		background: rgba(50, 55, 116, 0.95)
+		background: linear-gradient(to right, rgba(57, 66, 125, 0.85) 0%, rgba(50, 55, 116, 0.95) 100%)
+	&.muted
+		background: rgba(53, 58, 81, 0.9)
+		background: linear-gradient(to right, rgba(57, 66, 91, 0.8) 0%, rgba(53, 58, 81, 0.9) 100%)
+	&.red
+		background: rgba(246, 71, 71, 0.9)
+		background: linear-gradient(to right, rgba(255, 127, 80, 0.85) 0%, rgba(246, 71, 71, 0.95) 100%)
+	&.orange
+		background: rgba(246, 71, 71, 0.9)
+		background: linear-gradient(to right, rgba(255, 127, 80, 0.7) 0%, rgba(246, 71, 71, 0.9) 100%)
+	&.dark
+		background-color: $dark
+		h1, h2, h3, h4, h5, p, a
+			color: $fadedwhite
+	&.light
+		//background-color: rgba(69, 199, 252, 0.3)
+		background-color: rgba(248, 248, 248, 0.5)
+		h1, h2, h3, h4, h5, p, a
+			color: $gray
+	&.gray
+		background-color: $gray
 
 
 
@@ -482,64 +494,158 @@ section
 /////////////////////////////////////////
 /////////////////////////////////////////
 footer
-  .about
-    padding-top: 5rem
-    margin: auto
-    width: 80%
-    p
-      font-weight: 400
-      font-size: 0.9rem
-      line-height: 1.4rem
-    .info
-      padding-top: 4rem
-      padding-bottom: .5rem
-      font-size: 0.75rem
-      font-weight: 400
-    .portrait
-      display: inline-block
-      position: relative
-      width: 10rem
-      height: 10rem
-      overflow: hidden
-      border-radius: 50%
-      margin-bottom: 1rem
-      & img
-        width: 100%
-        height: 100%
-    .icons
-      padding: 1rem 0
-      .sub
-        text-transform: uppercase
-        color: #42465A
-      & > a
-        margin-left: 0.7rem
-        &:hover
-          text-decoration: none
-    .icon
-      fill: #828493
-      //#3F4258
-      width: 1.125rem
+	.about
+		padding-top: 5rem
+		margin: auto
+		width: 80%
+		p
+			font-weight: 500
+			font-size: 0.9rem
+			line-height: 1.4rem
+		.info
+			padding-top: 4rem
+			padding-bottom: .5rem
+			font-size: 0.75rem
+			font-weight: 400
+		.portrait
+			display: inline-block
+			position: relative
+			width: 10rem
+			height: 10rem
+			overflow: hidden
+			border-radius: 50%
+			margin-bottom: 1rem
+			& img
+				width: 100%
+				height: 100%
+		.icons
+			padding: 1rem 0
+			.sub
+				text-transform: uppercase
+				color: #42465A
+			& > a
+				margin-left: 0.7rem
+				&:hover
+					text-decoration: none
+		.icon
+			fill: #828493
+			//#3F4258
+			width: 1.125rem
 
 
 // @media only screen and (min-height: 700px)
-//   .cover
-//     height: 100%
+//	 .cover
+//		 height: 100%
 //
 // @media only screen and (max-width: 40em)
-//   .cover
-//     height: auto
-//     background: url(../images/covers/main-cover-small.jpg) no-repeat center top
+//	 .cover
+//		 height: auto
+//		 background: url(../images/covers/main-cover-small.jpg) no-repeat center top
 //
 // @media only screen and (min-width: 40.063em) and (max-width: 64em)
-//   .cover
-//     background: url(../images/covers/main-cover-medium.jpg) no-repeat center top
+//	 .cover
+//		 background: url(../images/covers/main-cover-medium.jpg) no-repeat center top
 //
 // @media only screen and (orientation: portrait)
-//   .cover
-//     background: url(../images/covers/main-cover-medium-portrait.jpg) no-repeat center top
+//	 .cover
+//		 background: url(../images/covers/main-cover-medium-portrait.jpg) no-repeat center top
 //
 // @media only screen and (min-width: 40.063em)
-//   .cover .button-group
-//     padding-top: 3.75rem
-//     padding-bottom: 1.25rem
-//     width: 50vw
+//	 .cover .button-group
+//		 padding-top: 3.75rem
+//		 padding-bottom: 1.25rem
+//		 width: 50vw
+
+
+
+
+
+
+
+/* ------------------------- checkboxes ------------------------------------- */
+
+
+
+// <h1>custom css only checkboxes</h1>
+// <div class="+float-left">
+// 	<label class="custom-input --checkbox">
+// 		<input type="checkbox" checked="checked">
+// 		<div class="custom-input__indicator"></div>
+// 		<span class="homepage__chart-bullet" style="background: rgb(86, 69, 201);"></span>
+// 		<span class="homepage__copy --small +mg-bottom-none">Metric Name</span>
+// 	</label>
+// </div>
+
+
+
+// .custom-input
+// 	font-size: 1rem
+// 	line-height: 1.5
+// 	padding-left: 1.5rem
+// 	cursor: pointer
+// 	display: block
+// 	position: relative
+//
+// .custom-input input
+// 	opacity: 0
+// 	position: absolute
+// 	z-index: -1
+//
+// [type=checkbox], [type=radio]
+// 	box-sizing: border-box
+// 	padding: 0
+//
+// .custom-input.\--checkbox input:checked~.custom-input__indicator
+// 	background-color: #fff
+// 	border: 2px solid #a7a8af
+// 	border-radius: 2px
+//
+// .custom-input input:checked~.custom-input__indicator
+// 	border: 2px solid #3139f2
+//
+// .custom-input__indicator
+// 	height: 1.11111111rem
+// 	width: 1.11111111rem
+// 	background-color: #fff
+// 	border: 2px solid #a7a8af
+// 	border-radius: 2px
+// 	left: 0
+// 	position: absolute
+// 	top: 50%
+// 	transform: translateY(-$size-10)
+//
+// .custom-input
+// 	font-size: 1rem
+// 	line-height: 1.5
+// 	padding-left: 1.5rem
+// 	cursor: pointer
+// 	display: block
+// 	position: relative
+//
+// .custom-input.\--checkbox .custom-input__indicator:after
+// 	height: .66666667rem
+// 	width: .33333333rem
+// 	top: .11111111rem
+// 	left: .38888889rem
+// 	border: solid #202020
+// 	border-width: 0 2px .11111111rem 0
+// 	transform: rotate(45deg)
+//
+// .custom-input__indicator:after
+// 	content: ""
+// 	display: none
+// 	position: absolute
+//
+// *, :after, :before
+// 	box-sizing: inherit
+//
+// .custom-input input:checked~.custom-input__indicator:after
+// 	display: block
+//
+// .custom-input.\--checkbox input:checked~.custom-input__indicator:after
+// 	display: block
+//
+//
+// input[type="radio" i], input[type="checkbox" i]
+// 	display: block
+//

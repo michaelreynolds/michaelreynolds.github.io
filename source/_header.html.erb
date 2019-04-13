@@ -3,29 +3,36 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
       <%= favicon_tag 'favicon.ico' %>
+      <title><%= current_page.data.title || "Michael Reynolds | Product Designer" %></title>
+      <meta name="description" content="I'm a UX Designer who's passionate about creating user experiences through thoughtful design and performance.">
 
+      <!-- Facebook Meta Tags -->
       <meta property="og:type" content="website">
       <meta property="og:url" content="https://michaelreynolds.net">
-      <!-- <meta property="og:image" content="https://michaelreynolds.net/images/og-image.png"> --><!-- 1200 × 630 -->
-      <meta property="og:title" content="<%= current_page.data.title || "Michael Reynolds | Product and UX Designer" %>" />
-      <meta property="og:description" name="description" content="I'm a UX Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta property="og:title" content="<%= current_page.data.title || "Michael Reynolds | Product Designer" %>" />
+      <meta property="og:description" name="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta property="og:image" content=""> <!-- 1200 × 630-->
 
+      <!-- Twitter Meta Tags -->
       <meta name="twitter:card" content="summary_large_image">
-      <!-- <meta name="twitter:site" content="@gobackpacking"> -->
-      <!-- <meta name="twitter:creator" content="@gobackpacking"> -->
-      <meta name="twitter:title" content="<%= current_page.data.title || "Michael Reynolds | Product and UX Designer" %>">
-      <meta name="twitter:description" content="I'm a UX Designer who's passionate about creating user experiences through thoughtful design and performance. http://michaelreynolds.net">
-      <!-- <meta name="twitter:image" content="https://michaelreynolds.net/images/card.png">  --><!-- 1024 × 512 --><!-- 600 × 330 -->
-      <meta name="twitter:url" content="https://michaelreynolds.net">
+      <meta name="twitter:title" content="<%= current_page.data.title || "Michael Reynolds | Product Designer" %>">
+      <meta name="twitter:description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta name="twitter:image" content=""> <!-- 1024 × 512 --><!-- 600 × 330 -->
 
+      <!-- Search Engine Tags -->
+      <meta itemprop="name" content="Michael Reynolds | Product Designer">
+      <meta itemprop="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta itemprop="image" content="">
       <meta name="robots" content="index, follow">
-
-      <title><%= current_page.data.title || "Michael Reynolds | Product and UX Designer" %></title>
 
       <%= stylesheet_link_tag :normalize %>
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css">
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900">
+      <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"> -->
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800,900">
+
+
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <%= stylesheet_link_tag :style %>
       <%= javascript_include_tag :all %>
