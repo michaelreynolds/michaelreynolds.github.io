@@ -133,7 +133,7 @@
 
 //'Open Sans', 'Roboto Condensed', 'Source Sans Pro', 'Montserrat', 'Open Sans',
 
-
+$white: #fff
 $fadedwhite: rgba(255, 255, 255, 0.8)
 $darkblue: rgba(0, 118, 255, 0.8)
 $brightblue: rgba(53, 141, 242, 1)
@@ -161,10 +161,8 @@ body
 
 //default font styles
 h1, h2, h3, h4, h5, p, a, ul, li
-	font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, sans-serif
-	// font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif
-	// font-family: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif
-	color: $fadedwhite
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+	color: blue
 h1, h2
 	font-weight: 700
 	padding: 0
@@ -175,17 +173,17 @@ h3, h4, h5, p, li
 a
 	font-weight: 700
 	&:hover
-		color: #fff
+		color: $white
 		text-decoration: underline
 	&:active
-		color: #fff
+		color: $white
 	&:visited
-		color: #fff
+		color: $white
 	&:focus
 		outline: none
 ::selection
 	background-color: #3281ff
-	color: #fff
+	color: $white
 img
 	display: block
 	z-index: -1
@@ -195,6 +193,8 @@ img
 .cta
 	padding-top: 1.5rem
 	margin-bottom: .5rem
+
+
 .button
 	text-decoration: none
 	font-weight: 600
@@ -267,8 +267,8 @@ img
 		background: none
 		display: inline-block
 		text-align: center
-		color: #fff
-		border: 1px solid #fff
+		color: $white
+		border: 1px solid $white
 		padding: 1rem 2.5rem
 		font-size: 1.4rem
 		letter-spacing: 0.3px
@@ -282,7 +282,7 @@ img
 		// 	background-color: #fcdb4f
 		// 	cursor: pointer
 		// &.red
-		//	 color: #fff
+		//	 color: $white
 		// 	background-color: #fa4542
 		// 	box-shadow: 0 3px 0 0 #a20101
 		//	 &:hover
@@ -330,7 +330,7 @@ header
 					text-decoration: none
 					@media only screen and (max-width: 1024px)
 						&
-							//background-color: #fff
+							//background-color: $white
 							// color: $darkblue
 			& a:hover
 				text-decoration: none
@@ -386,7 +386,7 @@ header
 	width: 12rem
 .locator
 	font-weight: 600
-	color: #fff
+	color: $white
 	margin-bottom: 1rem
 .arrow
 	width: 30px
@@ -476,7 +476,7 @@ section
 	&.dark
 		background-color: $dark
 		h1, h2, h3, h4, h5, p, a
-			color: $fadedwhite
+			color: $white
 	&.light
 		//background-color: rgba(69, 199, 252, 0.3)
 		background-color: rgba(248, 248, 248, 0.5)
@@ -596,7 +596,7 @@ footer
 // 	padding: 0
 //
 // .custom-input.\--checkbox input:checked~.custom-input__indicator
-// 	background-color: #fff
+// 	background-color: $white
 // 	border: 2px solid #a7a8af
 // 	border-radius: 2px
 //
@@ -606,7 +606,7 @@ footer
 // .custom-input__indicator
 // 	height: 1.11111111rem
 // 	width: 1.11111111rem
-// 	background-color: #fff
+// 	background-color: $white
 // 	border: 2px solid #a7a8af
 // 	border-radius: 2px
 // 	left: 0
