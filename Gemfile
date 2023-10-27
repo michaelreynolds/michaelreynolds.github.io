@@ -10,7 +10,8 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
-gem 'middleman-livereload'
-gem 'middleman-deploy', github: 'nulltask/middleman-deploy'
-gem 'middleman-compass', '>= 4.0.0'
+gem 'middleman', '>= 4.5'
+gem 'middleman-livereload', '~> 3.4', '>= 3.4.7'
+gem 'middleman-gh-pages'
+# gem 'middleman-compass'
+# gem 'compass', '~> 1.0', '>= 1.0.3'

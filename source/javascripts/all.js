@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-  $('.responsivemenu').on('click', function(){
-    $(this).toggleClass('checked');
-    $(".responsive").slideToggle("fast");
-  });
+  // $('.responsivemenu').on('click', function(){
+  //   $(this).toggleClass('checked');
+  //   $(".responsive").slideToggle("fast");
+  // });
 
   $('a[href^="#"]').click(function(){
     var the_id = $(this).attr("href");

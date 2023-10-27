@@ -52,13 +52,13 @@ end
 # $ middleman deploy
 
 #Deploy
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  # Optional Settings
-  # deploy.branch   = 'test' # default: gh-pages
-  deploy.branch   = 'master' # default: gh-pages
-  deploy.build_before = true # default: false
-  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-  deploy.commit_message = 'middleman auto deploy'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
-end
+# activate :deploy do |deploy|
+#   deploy.deploy_method = :git
+#   # Optional Settings
+#   # deploy.branch   = 'test' # default: gh-pages
+#   deploy.branch   = 'master' # default: gh-pages
+#   deploy.build_before = true # default: false
+#   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+#   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+#   deploy.commit_message = 'middleman auto deploy'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+# end

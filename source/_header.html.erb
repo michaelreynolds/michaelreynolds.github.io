@@ -4,35 +4,34 @@
 
       <%= favicon_tag 'favicon.ico' %>
       <title><%= current_page.data.title || "Michael Reynolds | Product Designer" %></title>
-      <meta name="description" content="I'm a UX Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta name="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design.">
 
       <!-- Facebook Meta Tags -->
       <meta property="og:type" content="website">
       <meta property="og:url" content="https://michaelreynolds.net">
       <meta property="og:title" content="<%= current_page.data.title || "Michael Reynolds | Product Designer" %>" />
-      <meta property="og:description" name="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta property="og:description" name="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design.">
       <meta property="og:image" content=""> <!-- 1200 × 630-->
 
       <!-- Twitter Meta Tags -->
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="<%= current_page.data.title || "Michael Reynolds | Product Designer" %>">
-      <meta name="twitter:description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta name="twitter:description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design.">
       <meta name="twitter:image" content=""> <!-- 1024 × 512 --><!-- 600 × 330 -->
 
       <!-- Search Engine Tags -->
       <meta itemprop="name" content="Michael Reynolds | Product Designer">
-      <meta itemprop="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design and performance.">
+      <meta itemprop="description" content="I'm a Product Designer who's passionate about creating user experiences through thoughtful design.">
       <meta itemprop="image" content="">
       <meta name="robots" content="index, follow">
 
       <%= stylesheet_link_tag :normalize %>
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css">
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-      <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900">
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"> -->
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800,900">
-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <%= stylesheet_link_tag :style %>
 
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <%= stylesheet_link_tag :style %>
       <%= javascript_include_tag :all %>
