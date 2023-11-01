@@ -1,3 +1,4 @@
+# https://github.com/edgecase/middleman-gh-pages
 require "middleman-gh-pages"
 
 # Ensure builds are skipped when publishing to the gh-pages branch
